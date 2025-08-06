@@ -1,48 +1,41 @@
 {
-  "version": 2,
-  "constructionCommande": "npm exécutez la construction",
-  "répertoire de sortie": "disque",
-  "installerCommand": "installation NPM",
-  "cadre": "vigarder",
-  "réécritures": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ],
-  "en-têtes": [
-    {
-      "source": "/(.*)",
-      "en-têtes": [
-        {
-          "clé": "Options de type X-Content",
-          "valeur": "nosniff"
-        },
-        {
-          "clé": "X-Frame-Options",
-          "valeur": "DÉNY"
-        },
-        {
-          "clé": "Protection X-XSS",
-          "valeur": "1; mode=bloc"
-        },
-        {
-          "clé": "Politique de référence",
-          "valeur": "origine stricte-quand-origine croisée"
-        }
-      ]
-    },
-    {
-      "source": "/statique/(.*)",
-      "en-têtes": [
-        {
-          "clé": "Cache-Contrôle",
-          "valeur": "public, âge maximum=31536000, immuable"
-        }
-      ]
-    }
-  ],
-  "env": {
-    "NŒUD_ENV": "production"
+  "nom": "histoires-enfants-premium",
+  "privé": vrai,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vigarder",
+    "construire": "tsc-b & & vite construire",
+    " peluche": "eslint.",
+    "aperçu": "aperçu des sites"
+  },
+  "dépendances": {
+    "réagir": "^19.0.0",
+    "réaction-dom": "^19.0.0",
+    "réagir-i18suivant": "^14.1.0",
+    "i18suivant": "^23.11.2",
+    "i18next-browser-languagedetector": "^7.2.1",
+    "framer-motion": "^11.1.7",
+    "recyclettes": "^2.12.7",
+    "balayeur": "^11.1.1",
+    "rayer": "^15.8.0",
+    "lucide-réaction": "^0.378.0",
+    "clsx": "^2.1.1",
+    "vent-fusion": "^2.3.0"
+  },
+  "dépendances Dev": {
+    "@eslint/js": "^9.0.0",
+    "@types/réagir": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixeur": "^10.4.19",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^5.0.0-canary-7118f5dd7-20240515",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "globaux": "^15.0.0",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.0.0-alpha.15",
+    "typecript": "~5.5.3",
+    "vigarder": "^6.0.0"
   }
 }
