@@ -1,0 +1,83 @@
+marge: 0;
+  largeur min: 320px;
+  hauteur minimale: 100vh;
+}
+
+#root {
+  hauteur minimale: 100vh;
+}
+
+/* Barre de défilement personnalisée */
+::-webkit-barre de défilement {
+  largeur: 8px;
+}
+
+::-webkit-scrollbar-track {
+  arrière-plan: #f1f1f1;
+}
+
+::-webkit-barre de défilement-pouce {
+  arrière-plan: #c1c1c1;
+  rayon frontière: 4px;
+}
+
+::-webkit-barre de défilement-pouce: survoler {
+  arrière-plan: #a8a8a8;
+}
+
+/* Animations fluides */
+* {
+  transition: tout 0,2s facilité;
+}
+
+/* Styles de mise au point */
+bouton:concentrez-vous,
+entrée:concentrez-vous,
+sélectionner:concentrez-vous {
+  contour: 2px solide #8B5CF6;
+  aperçu-décalage: 2px;
+}
+
+/* Chargement des animations */
+@keyframes impulsion {
+  0%, 100% {
+    opacité: 1;
+  }
+  50% {
+    opacité: 0,5;
+  }
+}
+
+@keyframes fondu {
+  de {
+    opacité: 0;
+    transformer: traduireY(20px);
+  }
+  à {
+    opacité: 1;
+    transformer: traduireY(0);
+  }
+}
+
+.animate-pulse {
+  animation: impulsion 2s cubique-bezier(0,4, 0, 0,6, 1) infini;
+}
+
+.animate-fadeIn {
+  animation: fondu 0,5s facilité;
+}
+
+/* Texte de dégradé */
+.gradient-texte {
+  arrière-plan: gradient linéaire(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: texte;
+  -webkit-texte-remplissage-couleur: transparent;
+  fond-clip: texte;
+}
+
+/* Morphisme du verre */
+.verre {
+  arrière-plan: rgba(255, 255, 255, 0,25);
+  filtre de toile de fond: flou(10px);
+  frontière: 1px solide rgba(255, 255, 255, 0,18);
+}
