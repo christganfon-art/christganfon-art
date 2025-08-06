@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "constructionCommande": "npm exécutez la construction",
+  "répertoire de sortie": "disque",
+  "installerCommand": "installation NPM",
+  "cadre": "vigarder",
+  "réécritures": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "en-têtes": [
+    {
+      "source": "/(.*)",
+      "en-têtes": [
+        {
+          "clé": "Options de type X-Content",
+          "valeur": "nosniff"
+        },
+        {
+          "clé": "X-Frame-Options",
+          "valeur": "DÉNY"
+        },
+        {
+          "clé": "Protection X-XSS",
+          "valeur": "1; mode=bloc"
+        },
+        {
+          "clé": "Politique de référence",
+          "valeur": "origine stricte-quand-origine croisée"
+        }
+      ]
+    },
+    {
+      "source": "/statique/(.*)",
+      "en-têtes": [
+        {
+          "clé": "Cache-Contrôle",
+          "valeur": "public, âge maximum=31536000, immuable"
+        }
+      ]
+    }
+  ],
+  "env": {
+    "NŒUD_ENV": "production"
+  }
+}
